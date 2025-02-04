@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency pairs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+  <h1> Currency pairs </h1>
+    <% @currencies.each do |curr| %>
+  <li> <a href="/<%= curr.upcase %>">Convert 1 <%= curr.upcase %> to...</a></li>
+    <% end %>
+
+  </body>
+</html>

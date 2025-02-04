@@ -1,0 +1,7 @@
+  <h1> Convert <%=@first_curr%> </h1>
+  <div>   <a href="/"> Go back</a> </div>
+  <div>
+    <% @currencies.each do |curr| %>
+  <li> <a href="/<%= @first_curr.upcase %>/<%=curr.upcase%>">Convert 1 <%=@first_curr%> to <%= curr.upcase %> to...</a></li>
+    <% end %>
+</div>
